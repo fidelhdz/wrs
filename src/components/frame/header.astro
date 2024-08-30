@@ -1,0 +1,78 @@
+---
+import LogoWRS from "../images/logoWRS.astro";
+---
+
+<header>
+    <div id="logo">
+        <a href="/"><LogoWRS /></a>
+    </div>
+    <div id="burger-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+    </div>
+</header>
+
+<style lang="scss">
+    header {
+        padding: 50px 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+
+        @media screen and (width < 75em){
+            padding: 40px 26px;
+            background-color: rgb(10 30 40 / 0.8);
+            backdrop-filter: blur(8px);
+            z-index: 2;
+        }
+
+        #logo {
+            display: block;
+            width: 90px;
+        }
+
+        #burger-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: end;
+            cursor: pointer;
+
+            .line {
+                display: block;
+                width: 45px;
+                height: 1px;
+                background-color: var(--wrs-lime-color);
+
+                &.line-1 {
+                    width: 15px;
+                }
+
+                &.line-2 {
+                    width: 30px;
+                }
+            }
+
+            &:hover {
+                .line {
+                    background-color: white;
+
+                    &.line-1 {
+                        width: 30px;
+                    }
+
+                    &.line-2 {
+                        width: 45px;
+                    }
+
+                    &.line-3 {
+                        width: 15px;
+                    }
+                }
+            }
+        }
+    }
+</style>
