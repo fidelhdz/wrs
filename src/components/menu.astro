@@ -1,0 +1,126 @@
+---
+import LogoIcon from "./images/logoWRS.astro";
+---
+<div id="mega-menu">
+    <ul>
+        <li><LogoIcon /></li>
+        <li><a href="/">Inicio</a></li>
+        <li>
+            Portafolio
+            <ul>
+                <li><a href="/">ZION</a></li>
+                <li><a href="/">SAG</a></li>
+                <li><a href="/">Tryser</a></li>
+                <li><a href="/">IANSA</a></li>
+                <li><a href="/">Bull Capital Group</a></li>
+            </ul>
+        </li>
+        <li><a href="/">Servicios</a></li>
+        <li><a href="/">Valores</a></li>
+        <!-- <li><a href="/blog">Blog</a></li> -->
+    </ul>
+</div>
+
+<style lang="scss">
+    #mega-menu {
+        position: fixed;
+        background-color: rgb(10 30 40 / 0.96);
+        backdrop-filter: blur(20px);
+        width: 100svw;
+        height: 100svh;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        &.visible {
+            display: flex;
+            animation: megaMenuInAnimation forwards 1000ms ease-in-out;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                font-family: var(--wrs-monserrat-font);
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: clamp(2.25rem, 2vw, 3rem);
+                color: rgb(255 255 255 / 0.7);
+
+                a {
+                    font-family: var(--wrs-monserrat-font);
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    font-size: clamp(2.25rem, 2vw, 3rem);
+                    color: rgb(255 255 255 / 0.7);
+                    text-decoration: none;
+
+                    &:hover {
+                        color: rgba(255 255 255 / 0.4);
+                    }
+                }
+
+                &:first-child {
+                    display: block;
+                    width: 160px;
+                    margin-bottom: 20px;
+                }
+
+                & > ul {
+                    margin-left: 100px;
+
+                    @media (max-width: 75em){
+                        margin-left: 50px;
+                    }
+
+                    li {
+                        margin: 8px 0;
+                        font-size: clamp(0.8rem, 0.6vw, 0.875rem);
+
+                        a {
+                            font-family: var(--fh-ff-raleway);
+                            font-size: clamp(0.8rem, 0.6vw, 0.875rem);
+                            text-transform: uppercase;
+                            color: rgb(255 204 113);
+
+                            &:hover {
+                                color: rgb(255 204 113 / 0.3);
+                            }
+                        }
+
+                        &:first-child {
+                            opacity: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @keyframes megaMenuInAnimation {
+        from {
+            opacity: 0;
+            filter: blur(10px);
+        }
+        to {
+            opacity: 1;
+            filter: blur(0);
+        }
+    }
+
+    @keyframes megaMenuOutAnimation {
+        from {
+            opacity: 1;
+            filter: blur(0);
+        }
+        to {
+            opacity: 0;
+            filter: blur(10px);
+        }
+    }
+</style>

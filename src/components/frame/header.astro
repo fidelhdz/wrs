@@ -3,10 +3,10 @@ import LogoWRS from "../images/logoWRS.astro";
 ---
 
 <header>
-    <div id="logo">
+    <div class="logo">
         <a href="/"><LogoWRS /></a>
     </div>
-    <div id="burger-menu">
+    <div id="burger-menu" class="menu-icon">
         <div class="line line-1"></div>
         <div class="line line-2"></div>
         <div class="line line-3"></div>
@@ -21,25 +21,28 @@ import LogoWRS from "../images/logoWRS.astro";
         align-items: center;
         position: sticky;
         top: 0;
+        z-index: 11;
 
         @media screen and (width < 75em){
             padding: 40px 26px;
             background-color: rgb(10 30 40 / 0.8);
             backdrop-filter: blur(8px);
-            z-index: 2;
         }
 
-        #logo {
+        .logo {
             display: block;
             width: 90px;
         }
 
-        #burger-menu {
+        .menu-icon {
             display: flex;
             flex-direction: column;
             gap: 8px;
             align-items: end;
             cursor: pointer;
+            top: 15px;
+            width: 40px;
+            height: 21px;
 
             .line {
                 display: block;
@@ -70,6 +73,37 @@ import LogoWRS from "../images/logoWRS.astro";
 
                     &.line-3 {
                         width: 15px;
+                    }
+                }
+            }
+
+            &.icon-close {
+                display: block;
+
+                .line-2 {
+                    opacity: 0;
+                }
+                .line-1 {
+                    width: 100%;
+                    transform: rotate(-45deg);
+                }
+                .line-3 {
+                    width: 100% !important;
+                    transform: rotate(45deg);
+                }
+
+                &:hover {
+                    .line {
+                        background-color: rgb(255 255 255 / 0.4);
+                        width: 100%;
+            
+                        &.line-2 {
+                            width: 100%;
+                        }
+            
+                        &.line-3 {
+                            width: 100%;
+                        }
                     }
                 }
             }

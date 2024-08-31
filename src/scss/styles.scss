@@ -7,14 +7,18 @@
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     transition: all 0.4s ease-in-out;
+    outline: none;
 }
 
 body {
     background-color: var(--wrs-back-color);
     position: relative;
     font-family: var(--wrs-montserrat-font);
+    height: auto;
 }
 
 .video-background {

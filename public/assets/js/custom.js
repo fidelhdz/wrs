@@ -22,3 +22,23 @@ document.querySelectorAll(`.link-to`).forEach((el) => {
         });
     });
 });
+
+const menuIcon = document.querySelector(`.menu-icon`);
+const megaMenu = document.querySelector(`#mega-menu`);
+const theLogo = document.querySelector(`.logo`);
+
+menuIcon.addEventListener(`click`, () => {
+    if ( megaMenu.classList.contains(`visible`) ){
+        megaMenu.style.animation = `megaMenuOutAnimation forwards 1000ms ease-in-out`;
+        megaMenu.addEventListener(`animationend`, () => {
+            menuIcon.classList.remove(`icon-close`);
+            theLogo.style.opacity = '1';
+            megaMenu.classList.remove(`visible`);
+            megaMenu.removeAttribute(`style`);
+        }, {once: true});
+    } else {
+        megaMenu.classList.add(`visible`);
+        menuIcon.classList.add(`icon-close`);
+        theLogo.style.opacity = '0';
+    }
+});
