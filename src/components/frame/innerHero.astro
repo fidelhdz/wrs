@@ -1,0 +1,71 @@
+---
+interface HeroProps {
+    subtitulo?: string;
+    titulo: string;
+}
+const { titulo, subtitulo } = Astro.props as HeroProps;
+---
+<section id="inner-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-xl-8">
+                <div class="center-hero-text">
+                    <h1>
+                        { subtitulo && (
+                            <small>{ subtitulo }</small>
+                        )}
+                        { titulo }
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style lang="scss">
+    #inner-hero {
+        color: white;
+        height: calc(100vh - 132px);
+        display: flex;
+        position: relative;
+        justify-content: center;
+
+        @media screen and (width < 75em){
+            height: 100svh;
+        }
+
+        .row {
+            height: 100%;
+        }
+
+        .center-hero-text {
+            position: relative;
+            top: 45%;
+            transform: translateY(-50%);
+
+            @media screen and (width < 75em){
+                
+            }
+    
+            h1 {
+                font-weight: 900;
+                font-size: 2.3rem;
+                text-transform: uppercase;
+                color: var(--wrs-lime-color);
+
+                @media screen and (width < 75em){
+                    font-size: 2rem;
+                }
+
+                small {
+                    font-size: 0.75rem;
+                    font-weight: 400;
+                    display: block;
+                    color: rgb(255 255 255 / 0.5);
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+</style>
