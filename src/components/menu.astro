@@ -1,24 +1,26 @@
 ---
-import LogoIcon from "./images/logoWRS.astro";
+
 ---
 <div id="mega-menu">
-    <ul>
-        <li><LogoIcon /></li>
-        <li><a href="/">Inicio</a></li>
-        <li>
-            Portafolio
+    <div class="container">
+        <div class="row col-12">
             <ul>
-                <li><a href="/">ZION</a></li>
-                <li><a href="/">SAG</a></li>
-                <li><a href="/">Tryser</a></li>
-                <li><a href="/">IANSA</a></li>
-                <li><a href="/">Bull Capital Group</a></li>
+                <li><small class="numero-menu">01.</small><a href="/">Inicio</a></li>
+                <li><small class="numero-menu">02.</small>Portafolio
+                    <ul>
+                        <li><a href="/portafolio/zion/">ZION</a></li>
+                        <li><a href="/portafolio/sag">SAG</a></li>
+                        <li><a href="/portafolio/tryser">Tryser</a></li>
+                        <li><a href="/portafolio/iansa">IANSA</a></li>
+                        <li><a href="/portafolio/bull-capital-group">Bull Capital Group</a></li>
+                    </ul>
+                </li>
+                <li><small class="numero-menu">03.</small><a href="/servicios/">Servicios</a></li>
+                <li><small class="numero-menu">04.</small><a href="/valores/">Valores</a></li>
+                <!-- <li><small class="numero-menu">05.</small><a href="/blog">Blog</a></li> -->
             </ul>
-        </li>
-        <li><a href="/">Servicios</a></li>
-        <li><a href="/">Valores</a></li>
-        <!-- <li><a href="/blog">Blog</a></li> -->
-    </ul>
+        </div>
+    </div>
 </div>
 
 <style lang="scss">
@@ -47,28 +49,33 @@ import LogoIcon from "./images/logoWRS.astro";
 
             li {
                 font-family: var(--wrs-monserrat-font);
-                font-weight: 700;
+                font-weight: 100;
+                margin: 0;
+                padding: 0;
                 text-transform: uppercase;
                 font-size: clamp(2.25rem, 2vw, 3rem);
-                color: rgb(255 255 255 / 0.7);
+                color: var(--wrs-mango-color);
+
+                small {
+                    font-size: 0.825rem;
+                    position: relative;
+                    display: inline-block;
+                    top: -20px;
+                    width: 60px;
+                    color: rgb(255 255 255 / 0.7);
+                }
 
                 a {
                     font-family: var(--wrs-monserrat-font);
-                    font-weight: 700;
+                    font-weight: 100;
                     text-transform: uppercase;
                     font-size: clamp(2.25rem, 2vw, 3rem);
-                    color: rgb(255 255 255 / 0.7);
+                    color: var(--wrs-mango-color);
                     text-decoration: none;
 
                     &:hover {
                         color: rgba(255 255 255 / 0.4);
                     }
-                }
-
-                &:first-child {
-                    display: block;
-                    width: 160px;
-                    margin-bottom: 20px;
                 }
 
                 & > ul {
@@ -86,10 +93,10 @@ import LogoIcon from "./images/logoWRS.astro";
                             font-family: var(--fh-ff-raleway);
                             font-size: clamp(0.8rem, 0.6vw, 0.875rem);
                             text-transform: uppercase;
-                            color: rgb(255 204 113);
+                            color: rgb(255 255 255 / 0.9);
 
                             &:hover {
-                                color: rgb(255 204 113 / 0.3);
+                                color: rgb(255 255 255 / 0.4);
                             }
                         }
 

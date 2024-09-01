@@ -1,0 +1,43 @@
+---
+interface introProyectoProps {
+    negocio: string;
+    intro: string;
+    ciudad: string;
+}
+
+const { negocio, ciudad, intro } = Astro.props as introProyectoProps;
+---
+<section id="intro-proyecto">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-12 col-xl-6 text-center">
+                <span>{ ciudad }</span>
+            </div>
+            <div class="col-12 col-xl-6">
+                <h4>{ negocio }</h4>
+                <slot name="introProyecto" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<style lang="scss">
+    #intro-proyecto {
+        padding-bottom: 60px;
+
+        h4 {
+            color: rgb(255 255 255);
+            font-weight: bold;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            transform: translateY(-70px);
+        }
+
+        span {
+            color: var(--wrs-lime-color);
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+    }
+</style>
