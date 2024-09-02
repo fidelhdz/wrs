@@ -1,11 +1,57 @@
 ---
 import PortafolioLayout from "../../layouts/portafolioLayout.astro";
 import IntroProyecto from "../../components/frame/introProyecto.astro";
+import SeccionesProyecto from "../../components/frame/seccionesProyecto.astro";
+import ImagenDobleProyecto from "../../components/frame/imagenDobleProyecto.astro";
+import ImagenProyecto from "../../components/frame/imagenProyecto.astro";
+import ImagenPausa from "../../components/frame/imagenPausa.astro";
 ---
 <PortafolioLayout>
-    <IntroProyecto negocio="Tryser" ciudad="Saltillo, Coahuila">
+    <IntroProyecto negocio="TRYSER" ciudad="Saltillo, Coahuila">
         <Fragment slot="introProyecto">
-            <p>Et laboris esse ut exercitation nostrud magna nostrud commodo consequat. Velit amet labore et commodo. Laborum reprehenderit est ut voluptate ullamco do aliquip occaecat tempor. Officia nostrud ullamco dolor aliqua eu in ex est cillum minim in aliqua aliquip. Minim dolore in ut non. Ad magna minim et consequat eu ea sit adipisicing cillum sint.</p>
+            <p>TRYSER fue el primer cliente de White Rhino Studio, y la relación que se formó durante este proyecto es muy especial. TRYSER, una compañía dedicada a productos de limpieza para el hogar y la industria, confió en nosotros para desarrollar su identidad visual desde cero, lo que marcó el inicio de una colaboración llena de creatividad y dedicación.</p>
         </Fragment>
     </IntroProyecto>
+
+    <ImagenProyecto imagen="/assets/images/proyectos/zion/portada.webp" />
+
+    <SeccionesProyecto numeracion="01" titulo="Entendiendo la Esencia de TRYSER">
+        <Fragment slot="textoProyecto">
+            <p>El proyecto comenzó con una investigación exhaustiva y una auditoría gráfica para analizar lo que TRYSER tenía en ese momento. Esta fase fue crucial para definir una dirección clara y asegurarnos de que cada elemento de la nueva identidad visual estuviera alineado con la misión y los valores de la empresa.</p>
+        </Fragment>
+    </SeccionesProyecto>
+
+    <ImagenDobleProyecto imagen1="/assets/images/proyectos/tryser/seccion-01.webp" imagen2="/assets/images/proyectos/tryser/seccion-02.webp" />
+
+    <SeccionesProyecto numeracion="02" titulo="El Poder del Tres">
+        <Fragment slot="textoProyecto">
+            <p>Inicialmente, la idea era trabajar únicamente con el nombre de la empresa. Sin embargo, el director creativo no podía dejar de pensar en los tres principales nichos de mercado de TRYSER: Industria, Negocio y Hogar. Esta conexión con el número tres (TRYser) inspiró un concepto visual basado en triadas y triángulos, resultando en una identidad visual poderosa y significativa.</p>
+        </Fragment>
+    </SeccionesProyecto>
+
+    <ImagenDobleProyecto imagen1="/assets/images/proyectos/tryser/seccion-03.webp" imagen2="/assets/images/proyectos/tryser/seccion-04.webp" />
+
+    <SeccionesProyecto numeracion="03" titulo="Desde la Marca hasta la Publicidad">
+        <Fragment slot="textoProyecto">
+            <p>La identidad visual creada se extendió naturalmente a otros aspectos de la marca, incluyendo las imágenes de los productos y la imagen publicitaria de los más importantes. Cada elemento fue diseñado para reforzar la presencia de TRYSER en el mercado y conectar con sus clientes de manera efectiva.</p>
+        </Fragment>
+    </SeccionesProyecto>
+
+    <ImagenDobleProyecto imagen1="/assets/images/proyectos/tryser/seccion-05.webp" imagen2="/assets/images/proyectos/tryser/seccion-06.webp" />
+
+    <SeccionesProyecto numeracion="04" titulo="Guiando el Crecimiento">
+        <Fragment slot="textoProyecto">
+            <p>El trabajo no terminó con la identidad visual. White Rhino Studio también desarrolló manuales de franquicia, incluyendo un estudio detallado del tipo de locales que TRYSER podría operar. Nos entrevistamos con Protección Civil de Coahuila para garantizar que se cumplieran todas las medidas de seguridad necesarias, y estas se integraron en los manuales. Además, diseñamos el etiquetado para los productos en sus versiones de venta al por menor y al por mayor, asegurando coherencia y claridad en cada presentación.</p>
+        </Fragment>
+    </SeccionesProyecto>
+
+    <ImagenDobleProyecto imagen1="/assets/images/proyectos/tryser/seccion-07.webp" imagen2="/assets/images/proyectos/tryser/seccion-08.webp" />
+
+    <SeccionesProyecto numeracion="05" titulo="Un Proyecto que Dejó Huella">
+        <Fragment slot="textoProyecto">
+            <p>El proyecto para TRYSER fue mucho más que un trabajo; fue una experiencia que nos apasionó y disfrutamos en cada etapa. Crear la marca e identidad visual de TRYSER no solo fortaleció la presencia de la empresa en el mercado, sino que también consolidó la reputación de White Rhino Studio como un socio creativo comprometido con la excelencia.</p>
+        </Fragment>
+    </SeccionesProyecto>
+
+    <ImagenPausa imagen="/assets/images/proyectos/tryser/the-rhino.webp" />
 </PortafolioLayout>

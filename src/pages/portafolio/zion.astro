@@ -1,11 +1,48 @@
 ---
 import PortafolioLayout from "../../layouts/portafolioLayout.astro";
 import IntroProyecto from "../../components/frame/introProyecto.astro";
+import SeccionesProyecto from "../../components/frame/seccionesProyecto.astro";
+import ImagenDobleProyecto from "../../components/frame/imagenDobleProyecto.astro";
+import ImagenProyecto from "../../components/frame/imagenProyecto.astro";
+import ImagenPausa from "../../components/frame/imagenPausa.astro";
 ---
 <PortafolioLayout>
-    <IntroProyecto negocio="Zion" ciudad="Saltillo, Coahuila">
+    <IntroProyecto negocio="ZION Automation Factory" ciudad="Saltillo, Coahuila">
         <Fragment slot="introProyecto">
-            <p>Et laboris esse ut exercitation nostrud magna nostrud commodo consequat. Velit amet labore et commodo. Laborum reprehenderit est ut voluptate ullamco do aliquip occaecat tempor. Officia nostrud ullamco dolor aliqua eu in ex est cillum minim in aliqua aliquip. Minim dolore in ut non. Ad magna minim et consequat eu ea sit adipisicing cillum sint.</p>
+            <p>El proyecto para ZION Automation Factory comenzó con la ausencia de un manual de identidad, pero con un logotipo sólido como base. Este logotipo nos permitió crear una paleta de colores inicial que evolucionó a lo largo del proceso, adaptándose a nuevos requisitos y desafíos.</p>
         </Fragment>
     </IntroProyecto>
+
+    <ImagenProyecto imagen="/assets/images/proyectos/zion/portada.webp" />
+
+    <SeccionesProyecto numeracion="01" titulo="Ajustando la Paleta de Colores">
+        <Fragment slot="textoProyecto">
+            <p>A medida que avanzábamos, el creador de la identidad visual de ZION se unió al proyecto, y juntos redefinimos la paleta de colores. Aunque inicialmente se habían considerado colores secundarios, finalmente se decidió limitar la paleta a dos colores principales, lo que requirió un enfoque más creativo para mantener el diseño visualmente atractivo.</p>
+        </Fragment>
+    </SeccionesProyecto>
+
+    <ImagenDobleProyecto imagen1="/assets/images/proyectos/zion/seccion-01.webp" imagen2="/assets/images/proyectos/zion/seccion-02.webp" />
+
+    <SeccionesProyecto numeracion="02" titulo="Rompiendo la Monocromía">
+        <Fragment slot="textoProyecto">
+            <p>Con un enfoque en la estética industrial y moderna, el equipo rompió la monocromía al incorporar elementos visuales impactantes. Esta colaboración gráfica permitió alcanzar un equilibrio entre el estilo industrial y la necesidad de crear un sitio web que reflejara la identidad robusta de ZION Automation Factory.</p>
+        </Fragment>
+    </SeccionesProyecto>
+
+    <SeccionesProyecto numeracion="03" titulo="Utilizando IA para Completar la Visión">
+        <Fragment slot="textoProyecto">
+            <p>El uso de imágenes en el sitio presentó desafíos únicos, especialmente en términos de ancho. Para abordar esto, utilizamos inteligencia artificial (IA) para rellenar los huecos en las imágenes y mejorar algunas partes que rompían con la armonía, asegurando una apariencia uniforme y cohesiva. Esta técnica  permitió que el diseño aprovechara todo el ancho del navegador, resultando en una experiencia visual impresionante.</p>
+        </Fragment>
+    </SeccionesProyecto>
+
+    <ImagenDobleProyecto imagen1="/assets/images/proyectos/zion/seccion-03.webp" imagen2="/assets/images/proyectos/zion/seccion-04.webp" />
+
+    <SeccionesProyecto numeracion="04" titulo="Superando Retos, Creando Impacto">
+        <Fragment slot="textoProyecto">
+            <p>El proyecto para ZION Automation Factory es un claro ejemplo de cómo los desafíos pueden convertirse en oportunidades. La colaboración entre creativos y el uso de tecnologías avanzadas resultaron en un sitio web que no solo es funcional, sino también estéticamente impactante. Este proyecto también subraya la importancia de un manual de identidad sólido para guiar la creación de la identidad visual.</p>
+            <p>¡Visita el sitio y descubre cómo la tecnología y el diseño industrial se fusionan en una experiencia visual única! <a href="https://zion-wrs.netlify.app/" target="_blank" rel="noopener noreferrer">ZION Automation Factory</a></p>
+        </Fragment>
+    </SeccionesProyecto>
+
+    <ImagenPausa imagen="/assets/images/proyectos/zion/the-rhino.webp" />
 </PortafolioLayout>
