@@ -1,0 +1,35 @@
+---
+interface seccionProps {
+    numeracion: string;
+    titulo: string;
+}
+const { numeracion, titulo } = Astro.props as seccionProps;
+---
+<section class="texto-para-proyectos">
+    <div class="container">
+        <div class="row">
+            <div class="col-2 col-xl-1 seccion-numero">{ numeracion }.</div>
+            <div class="col-10 col-xl-4 seccion-titulo">{ titulo }</div>
+            <div class="col-12 col-xl-7">
+                <slot name="textoProyecto" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<style lang="scss">
+    .texto-para-proyectos {
+        padding: 20px 0;
+
+        .seccion-numero {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: var(--wrs-lime-color);
+        }
+
+        .seccion-titulo {
+            @extend .seccion-numero;
+            color: rgb(255 255 255);
+        }
+    }
+</style>

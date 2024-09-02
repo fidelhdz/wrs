@@ -1,0 +1,25 @@
+---
+interface pausaProps {
+    imagen: string;
+}
+
+const { imagen } = Astro.props as pausaProps;
+---
+
+<section id="the-rhino" style={ { backgroundImage: `url(${imagen})` } }></section>
+
+<style lang="scss">
+    #the-rhino {
+        height: 500px;
+        background-color: var(--wrs-back-color);
+        margin: 100px 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media screen and (width < 75em){
+            height: 200px;
+            margin: 40px 0 100px;
+        }
+    }
+</style>
