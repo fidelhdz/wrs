@@ -135,6 +135,25 @@ section {
         }
     }
 
+    &.texto-para-proyectos {
+        p {
+            color: rgb(255 255 255 / 0.7);
+            font-size: 0.875rem;
+
+            a {
+                color: var(--wrs-mango-color);
+
+                &:hover {
+                    opacity: 0.4;
+                }
+            }
+
+            @media screen and (width < 75em){
+                margin-top: 20px;
+            }
+        }
+    }
+
     &#portafolio {
         height: 100vh;
         display: flex;

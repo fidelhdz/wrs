@@ -1,0 +1,48 @@
+---
+interface imagenesProps {
+    imagen1: string;
+    imagen2: string;
+}
+
+const { imagen1, imagen2 } = Astro.props as imagenesProps;
+---
+
+<section class="imagen-doble">
+    <div class="container">
+        <div class="dividir-imagen" style={ { backgroundImage: `url(${imagen1})` } }></div>
+        <div class="dividir-imagen" style={ { backgroundImage: `url(${imagen2})` } }></div>
+    </div>
+</section>
+
+<style lang="scss">
+    .imagen-doble {
+        margin: 100px 0;
+
+        @media screen and (width < 75em){
+            margin: 40px 0;
+        }
+
+        .container {
+            display: flex;
+
+            @media screen and (width < 75em){
+                flex-direction: column;
+            }
+
+            .dividir-imagen {
+                width: 50%;
+                min-height: 300px;
+                height: 540px;
+                background-color: black;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+
+                @media screen and (width < 75em){
+                    width: 100%;
+                    height: 350px;
+                }
+            }
+        }
+    }
+</style>

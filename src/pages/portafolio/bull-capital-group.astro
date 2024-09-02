@@ -1,21 +1,54 @@
 ---
 import PortafolioLayout from "../../layouts/portafolioLayout.astro";
 import IntroProyecto from "../../components/frame/introProyecto.astro";
+import SeccionesProyecto from "../../components/frame/seccionesProyecto.astro";
+import ImagenDobleProyecto from "../../components/frame/imagenDobleProyecto.astro";
+import ImagenProyecto from "../../components/frame/imagenProyecto.astro";
+import ImagenPausa from "../../components/frame/imagenPausa.astro";
 ---
 <PortafolioLayout>
     <IntroProyecto negocio="Bull Capital Group" ciudad="Saltillo, Coahuila">
         <Fragment slot="introProyecto">
-            <p>Et laboris esse ut exercitation nostrud magna nostrud commodo consequat. Velit amet labore et commodo. Laborum reprehenderit est ut voluptate ullamco do aliquip occaecat tempor. Officia nostrud ullamco dolor aliqua eu in ex est cillum minim in aliqua aliquip. Minim dolore in ut non. Ad magna minim et consequat eu ea sit adipisicing cillum sint.</p>
+            <p>Con Bull Capital Group, nos enfrentamos al emocionante desafío de construir un sitio web que reflejara la esencia de la marca, a pesar de la ausencia de un manual de identidad. Este proyecto nos permitió explorar nuestra creatividad y dar forma a una identidad visual que destacara por su elegancia y minimalismo.</p>
         </Fragment>
     </IntroProyecto>
 
-    <section id="imagen-proyecto">IMAGEN</section>
+    <ImagenProyecto imagen="/assets/images/proyectos/bcg/portada.webp" />
 
-    <section id="contexto-proyecto">Contexto</section>
+    <SeccionesProyecto numeracion="01" titulo="Investigación de Mercado y Conceptualización">
+        <Fragment slot="textoProyecto">
+            <p>El primer paso fue sumergirnos en una profunda investigación de mercado. Queríamos entender no solo la competencia, sino también cómo hacer que Bull Capital Group se destacara. La clave fue definir un “look and feel” atractivo, utilizando una paleta de colores sobria, tipografías elegantes y un enfoque visual minimalista que comunicara confianza y profesionalismo.</p>
+        </Fragment>
+    </SeccionesProyecto>
 
-    <section id="estrategia-proyecto">Estrategia</section>
+    <SeccionesProyecto numeracion="02" titulo="Diseño con Espacios que Respiran">
+        <Fragment slot="textoProyecto">
+            <p>Con un concepto claro, nos enfocamos en la estructura del sitio. Optamos por espacios definidos y bien organizados, permitiendo que cada elemento visual tuviera su propio protagonismo. Este enfoque no solo mejoró la estética, sino que también facilitó la navegación, ofreciendo a los usuarios una experiencia limpia y fluida.</p>
+        </Fragment>
+    </SeccionesProyecto>
 
-    <section id="conceptualizacion-proyecto">Conceptualización</section>
+    <ImagenDobleProyecto imagen1="/assets/images/proyectos/bcg/seccion-01.webp" imagen2="/assets/images/proyectos/bcg/seccion-02.webp" />
 
-    <section id="conclusiones-proyecto">Conclusiones</section>
+    <SeccionesProyecto numeracion="03" titulo="Colaboración y Decisiones Estratégicas">
+        <Fragment slot="textoProyecto">
+            <p>La colaboración con el cliente fue esencial. Trabajamos mano a mano para decidir qué elementos eran imprescindibles y cuáles podían eliminarse. Su conocimiento del negocio nos ayudó a resaltar la información más relevante, garantizando que el sitio web no solo fuera hermoso, sino también funcional y alineado con sus objetivos comerciales.</p>
+        </Fragment>
+    </SeccionesProyecto>
+
+    <ImagenDobleProyecto imagen1="/assets/images/proyectos/bcg/seccion-03.webp" imagen2="/assets/images/proyectos/bcg/seccion-04.webp" />
+
+    <SeccionesProyecto numeracion="04" titulo="Harmonía Visual y Resultado Final">
+        <Fragment slot="textoProyecto">
+            <p>El resultado final fue un sitio web que exuda limpieza y armonía. La combinación cuidadosa de colores, imágenes y tipografías crea una experiencia de lectura agradable y envolvente. Cada página respira, y cada elemento encuentra su lugar en un diseño que equilibra estética y funcionalidad.</p>
+        </Fragment>
+    </SeccionesProyecto>
+
+    <SeccionesProyecto numeracion="05" titulo="Conclusión">
+        <Fragment slot="textoProyecto">
+            <p>A pesar de los desafíos iniciales, logramos crear un sitio web que no solo representa a Bull Capital Group, sino que también establece un nuevo estándar de simplicidad elegante en el sector. Este proyecto es un testimonio de cómo la creatividad y la colaboración pueden superar cualquier obstáculo, creando resultados que realmente destacan.</p>
+            <p>Visita el sitio web de <a href="https://bullcapital.com.mx/" target="_blank">Bull Capital Group</a>.</p>
+        </Fragment>
+    </SeccionesProyecto>
+
+    <ImagenPausa imagen="/assets/images/proyectos/bcg/the-rhino.webp" />
 </PortafolioLayout>

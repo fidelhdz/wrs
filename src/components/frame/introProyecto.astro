@@ -1,11 +1,10 @@
 ---
 interface introProyectoProps {
     negocio: string;
-    intro: string;
     ciudad: string;
 }
 
-const { negocio, ciudad, intro } = Astro.props as introProyectoProps;
+const { negocio, ciudad } = Astro.props as introProyectoProps;
 ---
 <section id="intro-proyecto">
     <div class="container">
@@ -31,6 +30,10 @@ const { negocio, ciudad, intro } = Astro.props as introProyectoProps;
             font-size: 0.75rem;
             text-transform: uppercase;
             transform: translateY(-70px);
+
+            @media screen and (width < 75em){
+                transform: unset;
+            }
         }
 
         span {
@@ -38,6 +41,13 @@ const { negocio, ciudad, intro } = Astro.props as introProyectoProps;
             text-transform: uppercase;
             font-size: 0.75rem;
             font-weight: 600;
+            
+            @media screen and (width < 75em){
+                width: 100%;
+                display: block;
+                text-align: end !important;
+                margin: 40px 0;
+            }
         }
     }
 </style>
