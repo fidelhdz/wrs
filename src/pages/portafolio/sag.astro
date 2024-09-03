@@ -1,11 +1,47 @@
 ---
 import PortafolioLayout from "../../layouts/portafolioLayout.astro";
 import IntroProyecto from "../../components/frame/introProyecto.astro";
+import SeccionesProyecto from "../../components/frame/seccionesProyecto.astro";
+import ImagenDobleProyecto from "../../components/frame/imagenDobleProyecto.astro";
+import ImagenProyecto from "../../components/frame/imagenProyecto.astro";
+import ImagenPausa from "../../components/frame/imagenPausa.astro";
 ---
 <PortafolioLayout>
-    <IntroProyecto negocio="SAG" ciudad="Saltillo, Coahuila">
+    <IntroProyecto negocio="SAG, Logística de Transporte" ciudad="Saltillo, Coahuila">
         <Fragment slot="introProyecto">
-            <p>Et laboris esse ut exercitation nostrud magna nostrud commodo consequat. Velit amet labore et commodo. Laborum reprehenderit est ut voluptate ullamco do aliquip occaecat tempor. Officia nostrud ullamco dolor aliqua eu in ex est cillum minim in aliqua aliquip. Minim dolore in ut non. Ad magna minim et consequat eu ea sit adipisicing cillum sint.</p>
+            <p>SAG, Logística de Transporte, seleccionó a White Rhino Studio para desarrollar su identidad visual. Desde el principio, el enfoque fue crear una imagen que representara la esencia de la empresa y se destacara en el mercado competitivo del transporte de logística.</p>
         </Fragment>
     </IntroProyecto>
+
+    <ImagenProyecto imagen="/assets/images/proyectos/sag/portada.webp" />
+
+    <SeccionesProyecto numeracion="01" titulo="Ideas en Evolución">
+        <Fragment slot="textoProyecto">
+            <p>El proceso comenzó con una serie de pruebas basadas tanto en ideas del cliente como del equipo de White Rhino Studio. Cada propuesta fue discutida en detalle durante reuniones con la directora de SAG, evaluando los pros y contras en función de la investigación de la competencia. Este ejercicio creativo conjunto fue un aspecto clave del éxito del proyecto.</p>
+        </Fragment>
+    </SeccionesProyecto>
+
+    <ImagenDobleProyecto imagen1="/assets/images/proyectos/sag/seccion-01.webp" imagen2="/assets/images/proyectos/sag/seccion-02.webp" />
+
+    <SeccionesProyecto numeracion="02" titulo="Dar Vida a la Visión">
+        <Fragment slot="textoProyecto">
+            <p>Una vez seleccionada la propuesta final, el equipo se enfocó en darle vida y voz a la identidad visual de SAG. Desde la elección de la tipografía hasta la selección de los colores, cada decisión fue tomada con el objetivo de crear una imagen fuerte y coherente.</p>
+        </Fragment>
+    </SeccionesProyecto>
+
+    <SeccionesProyecto numeracion="03" titulo="Versatilidad en Color">
+        <Fragment slot="textoProyecto">
+            <p>Una de las grandes ventajas de la propuesta seleccionada fue la posibilidad de desarrollar una serie de colores para cada división del negocio. Esta flexibilidad fue especialmente apreciada por la directora de SAG, ya que permite a la empresa mantener una identidad visual coherente y, al mismo tiempo, diferenciar sus distintas unidades de negocio.</p>
+        </Fragment>
+    </SeccionesProyecto>
+
+    <ImagenDobleProyecto imagen1="/assets/images/proyectos/sag/seccion-03.webp" imagen2="/assets/images/proyectos/sag/seccion-04.webp" />
+
+    <SeccionesProyecto numeracion="04" titulo="Un Resultado que Resuena">
+        <Fragment slot="textoProyecto">
+            <p>El resultado final del proyecto para SAG, Logística de Transporte, fue una identidad visual que no solo refleja la profesionalidad y solidez de la empresa, sino que también ofrece la versatilidad necesaria para adaptarse a las diversas facetas del negocio. Fue un proyecto que reafirmó la importancia de la colaboración creativa y la atención a los detalles.</p>
+        </Fragment>
+    </SeccionesProyecto>
+
+    <ImagenPausa imagen="/assets/images/proyectos/sag/the-rhino.webp" />
 </PortafolioLayout>
