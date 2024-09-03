@@ -9,6 +9,11 @@ function showText(theClass) {
     proyectoTexto.style.display = `block`;
 }
 
+AOS.init({
+    duration: 800,
+    easing: `ease-in-out`
+});
+
 document.querySelectorAll(`.link-to`).forEach((el) => {
     el.addEventListener('mouseover', (el) => {
         const nameClass = el.target.classList[1];

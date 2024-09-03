@@ -1,4 +1,5 @@
 ---
+import WhoAreRhinos from "../components/frame/whoAreRhinos.astro";
 import MainLayout from "../layouts/mainLayout.astro";
 ---
 
@@ -8,11 +9,11 @@ import MainLayout from "../layouts/mainLayout.astro";
 			<div class="row">
 				<div class="col-12 d-flex justify-content-center">
 					<div class="center-hero-text">
-						<h1>
+						<h1 data-aos="fade-right">
 							<span>White</span><span>Rhino</span><small>Studio</small>
 						</h1>
-						<div class="diagonal-line"></div>
-						<p class="hero-text">
+						<div class="diagonal-line" data-aos="zoom-in"></div>
+						<p class="hero-text" data-aos="fade-left">
 							Bienvenido a White Rhino Studio, donde la creatividad no tiene límites y cada proyecto es una oportunidad para sorprender.
 						</p>
 					</div>
@@ -27,60 +28,60 @@ import MainLayout from "../layouts/mainLayout.astro";
 				<div class="col-12 col-xl-6">
 					<ul>
 						<li>
-							<div class="categoria">Website</div>
-							<div class="proyecto"><a href="/portafolio/zion/" class="link-to link-to-zion">Zion</a></div>
-							<div class="proyecto-texto-mobile">
+							<div class="categoria" data-aos="fade-right">Website</div>
+							<div class="proyecto" data-aos="fade-left"><a href="/portafolio/zion/" class="link-to link-to-zion">Zion</a></div>
+							<div class="proyecto-texto-mobile" data-aos="fade-up">
 								<p>El proyecto para ZION Automation Factory combinó creatividad, colaboración y tecnología avanzada. A pesar de los retos iniciales, el equipo de White Rhino Studio desarrolló un sitio web industrial y moderno, utilizando IA y un enfoque visual innovador que destaca por su impacto y estilo.</p>
 							</div>
 						</li>
 						<!-- <li>
-							<div class="categoria">Identidad Visual</div>
-							<div class="proyecto"><a href="/portafolio/sag" class="link-to link-to-sag">SAG</a></div>
-							<div class="proyecto-texto-mobile">
+							<div class="categoria" data-aos="fade-right">Identidad Visual</div>
+							<div class="proyecto" data-aos="fade-left"><a href="/portafolio/sag" class="link-to link-to-sag">SAG</a></div>
+							<div class="proyecto-texto-mobile" data-aos="fade-up">
 								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero sint ex veniam, recusandae nostrum est dignissimos ad quo labore pariatur error, aliquam odio laborum nemo neque. Sit expedita quasi non.</p>
 							</div>
 						</li> -->
 						<li>
-							<div class="categoria">Branding</div>
-							<div class="proyecto"><a href="/portafolio/tryser" class="link-to link-to-tryser">Tryser</a></div>
-							<div class="proyecto-texto-mobile">
+							<div class="categoria" data-aos="fade-right">Branding</div>
+							<div class="proyecto" data-aos="fade-left"><a href="/portafolio/tryser" class="link-to link-to-tryser">Tryser</a></div>
+							<div class="proyecto-texto-mobile" data-aos="fade-up">
 								<p>El proyecto de creación de la marca e identidad visual de TRYSER fue una experiencia transformadora. Desde la conceptualización hasta el diseño de manuales y etiquetado, White Rhino Studio entregó un resultado que refleja la esencia y los valores de esta empresa de productos de limpieza.</p>
 							</div>
 						</li>
 						<!-- <li>
-							<div class="categoria">Website</div>
-							<div class="proyecto"><a href="/portafolio/iansa" class="link-to link-to-iansa">IANSA</a></div>
-							<div class="proyecto-texto-mobile">
+							<div class="categoria" data-aos="fade-right">Website</div>
+							<div class="proyecto" data-aos="fade-left"><a href="/portafolio/iansa" class="link-to link-to-iansa">IANSA</a></div>
+							<div class="proyecto-texto-mobile" data-aos="fade-up">
 								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero sint ex veniam, recusandae nostrum est dignissimos ad quo labore pariatur error, aliquam odio laborum nemo neque. Sit expedita quasi non.</p>
 							</div>
 						</li> -->
 						<li>
-							<div class="categoria">Website</div>
-							<div class="proyecto"><a href="/portafolio/bull-capital-group" class="link-to link-to-bcg">Bull Capital Group</a></div>
-							<div class="proyecto-texto-mobile">
+							<div class="categoria" data-aos="fade-right">Website</div>
+							<div class="proyecto" data-aos="fade-left"><a href="/portafolio/bull-capital-group" class="link-to link-to-bcg">Bull Capital Group</a></div>
+							<div class="proyecto-texto-mobile" data-aos="fade-up">
 								<p>Bull Capital Group enfrentó el desafío de crear un sitio web sin un manual de identidad. A través de una cuidadosa investigación y colaboración, el equipo de White Rhino Studio desarrolló una identidad visual minimalista y atractiva, resultando en un sitio web limpio y armonioso que comunica efectividad y estilo.</p>
 							</div>
 						</li>
 					</ul>
 				</div>
 				<div class="col-xl-6">
-					<div class="proyecto-texto zion">
+					<div class="proyecto-texto zion" data-aos="fade-down">
 						<h4>Zion</h4>
 						<p>El proyecto para ZION Automation Factory combinó creatividad, colaboración y tecnología avanzada. A pesar de los retos iniciales, el equipo de White Rhino Studio desarrolló un sitio web industrial y moderno, utilizando IA y un enfoque visual innovador que destaca por su impacto y estilo.</p>
 					</div>
-					<div class="proyecto-texto sag">
+					<div class="proyecto-texto sag" data-aos="fade-down">
 						<h4>SAG</h4>
 						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero sint ex veniam, recusandae nostrum est dignissimos ad quo labore pariatur error, aliquam odio laborum nemo neque. Sit expedita quasi non.</p>
 					</div>
-					<div class="proyecto-texto tryser">
+					<div class="proyecto-texto tryser" data-aos="fade-down">
 						<h4>Tryser</h4>
 						<p>El proyecto de creación de la marca e identidad visual de TRYSER fue una experiencia transformadora. Desde la conceptualización hasta el diseño de manuales y etiquetado, White Rhino Studio entregó un resultado que refleja la esencia y los valores de esta empresa de productos de limpieza.</p>
 					</div>
-					<div class="proyecto-texto iansa">
+					<div class="proyecto-texto iansa" data-aos="fade-down">
 						<h4>IANSA</h4>
 						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero sint ex veniam, recusandae nostrum est dignissimos ad quo labore pariatur error, aliquam odio laborum nemo neque. Sit expedita quasi non.</p>
 					</div>
-					<div class="proyecto-texto bcg">
+					<div class="proyecto-texto bcg" data-aos="fade-down">
 						<h4>Bull Capital Group</h4>
 						<p>Bull Capital Group enfrentó el desafío de crear un sitio web sin un manual de identidad. A través de una cuidadosa investigación y colaboración, el equipo de White Rhino Studio desarrolló una identidad visual minimalista y atractiva, resultando en un sitio web limpio y armonioso que comunica efectividad y estilo.</p>
 					</div>
@@ -89,24 +90,5 @@ import MainLayout from "../layouts/mainLayout.astro";
 		</div>
 	</section>
 
-	<section id="los-rinos">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-xl-6">
-					<div class="subtitulo">&iquest;Quienes son los rhinos?</div>
-					<h2>Desata la bestia creativa:<br>&excl;Prepárate para el efecto WOW!</h2>
-				</div>
-				<div class="col-12 col-xl-6">
-					<ul>
-						<li>
-							<p>Ubicados en el corazón del norte de México, en Saltillo, Coahuila, estamos aquí para transformar tu visión en una experiencia visual impactante que deje huella. Desde el diseño de marcas que capturan la esencia de tu negocio hasta la creación de sitios web que detonan el asombro, nuestra misión es simple: darle a cada empresa, sin importar su tamaño, una presencia gráfica digna de un Ferrari.</p>
-						</li>
-						<li>
-							<p>Somos serios en nuestra dedicación, pero locos por liberar la creatividad que define a tu marca. &iquest;Explora y descubre cómo podemos desatar la bestia creativa en tu próximo proyecto!</p>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
+	<WhoAreRhinos />
 </MainLayout>
