@@ -1,0 +1,44 @@
+---
+
+---
+<h1 class="counter">0</h1>
+<div class="preloader">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+</div>
+
+<style lang="scss">
+    .counter {
+        font-family: var(--wrs-font-montserrat);
+        font-weight: 900;
+        position: absolute;
+        bottom: 3vh;
+        right: 5vw;
+        font-size: 10vw;
+        color: var(--wrs-lime-color);
+        position: fixed;
+        z-index: 101;
+    }
+
+    .preloader {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 100;
+        display: flex;
+
+        .bar {
+            width: 10vw;
+            height: 105vh;
+            background-color: var(--wrs-back-color);
+        }
+    }
+</style>
