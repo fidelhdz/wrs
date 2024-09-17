@@ -154,6 +154,45 @@ section {
         }
     }
 
+    &#lista-de-servicios {
+        .combo-definition {
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            color: var(--wrs-lime-color);
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: rgb(255 255 255 / 0.5);
+            font-size: 1rem;
+
+            a {
+                text-decoration: none;
+                color: var(--wrs-mango-color);
+                font-weight: 300;
+                text-transform: uppercase;
+                font-size: 0.8rem;
+
+                &:hover {
+                    opacity: 0.4;
+                }
+            }
+        }
+
+        ul {
+            list-style: lower-roman;
+
+            li {
+                color: rgb(255 255 255 / 0.6);
+                line-height: 1.8;
+                margin-bottom: 12px;
+            }
+        }
+    }
+
     &#portafolio {
         height: 100vh;
         display: flex;
@@ -305,7 +344,7 @@ section {
 }
 
 footer {
-    padding: 0 0 60px 0;
+    padding: 0 0 100px 0;
 
     .primer-nivel {
         display: flex;
