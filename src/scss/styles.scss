@@ -182,6 +182,25 @@ section {
             }
         }
 
+        .combo-presentation {
+            background-color: var(--wrs-mango-color);
+            padding: 30px;
+            border-radius: 30px;
+            transform: rotate(-1deg);
+            
+            @media screen and (width < 75em){
+                padding: 20px;
+            }
+
+            h3 {
+                color: rgb(255 255 255);
+            }
+
+            p {
+                color: rgb(40 40 40);
+            }
+        }
+
         ul {
             list-style: lower-roman;
 
